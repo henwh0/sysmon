@@ -1,5 +1,7 @@
 #!/bin/sh
 
+trap "clear; echo 'Exiting...'; exit 0" INT
+
 while true; do
     clear
     echo "$(hostname) - $(date)"
